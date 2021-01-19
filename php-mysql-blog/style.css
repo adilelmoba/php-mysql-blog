@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #3b5360;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    /* height: 100vh; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    flex-direction: column;
+}
+
+.small_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.message {
+    width: 100%;
+    margin-top: 5rem;
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.no-connection {
+    padding: 0 2rem;
+    color: #F03A17;
+    background-color: #ffb5a6;
+}
+
+.success {
+    padding: 0 2rem;
+    color: #16C60C;
+    background-color: #B1ECAE;
+}
+
+/******** INDEX ********/
+.btn {
+    margin-top: 3rem;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-dark);
+    padding: .5rem 2rem;
+    border: var(--color-dark) 2px solid;
+    border-radius: 8px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--color-dark);
+}
+
+.articles {
+    margin-top: 5rem;
+    flex-basis: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: var(--color-dark);
+    margin: 2rem .5rem;
+    height: 20rem;
+    width: 28rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card > * {
+    margin: 1rem;
+}
+
+.title_card {
+    font-size: 2.75rem;
+    line-height: 1;
+}
+
+.content_card {
+    font-size: 2rem;
+    /* width: 80%; */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display: inline-block; */
+}
+
+.btn_card {
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: auto;
+    width: 12rem;
+    color: black;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+
+/******** CREATE ********/
+.form {
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    
+    width: 60rem;
+}
+
+.form > * {
+    font-family: inherit;
+    text-align: center;
+    font-size: 3rem;
+    border: none;
+    background-color: #e8e8e8;
+    transition: all .1s;
+}
+
+.form > *:not(:last-child):focus {
+    border-bottom: 3px solid var(--color-dark);
+}
+
+.input__title {
+    padding: 0 8rem;
+    margin: 5rem 0 3rem 0; 
+}
+
+/* .input__title::placeholder {
+    text-align: center;
+} */
+
+.textarea__content {
+    resize: none;
+    font-size: 2rem;
+}
+
+.btn__submit {
+    color: white;
+    background-color: var(--color-dark);
+    width: 25rem;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.btn__submit:hover {
+    background-color: #292E31;
+}
+
+/******** VIEW ********/
+.view {
+
+}
+.title_edit {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: var(--color-dark);
+    color: white;
+    line-height: 10rem;
+    width: 110rem;
+
+}
+
+.content_edit {
+    width: 110rem;
+    margin-top: 3rem;
+    border-left: 2px solid var(--color-dark);
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.edit {
+    display: flex;
+}
+
+.edit_edit {
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: auto;
+    width: 12rem;
+    color: white;
+    background-color: #16a596;
+    text-align: center;
+    margin-right: 2rem;
+    padding: .5rem;
+    
+}
+
+.edit_edit:hover {
+    background-color: #63C3B9;
+}
+
+.delete_edit {
+    font-family: inherit;
+    color: white;
+    background-color: #c70039;
+    width: 12rem;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 3rem;
+    border: none;
+    padding: .5rem;
+}
+
+.delete_edit:hover {
+    background-color: #D9557B;
+}
+
+/******** LOGIN ********/
+.helper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+
+    width: 80rem;
+    height: 45vh;
+    background: url('blog-img.png') right;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+}
+
+.form-login {
+    /* height: 20vh; */
+    background-color: rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+.form-login > * {
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 2.5rem 0 2.5rem 3rem;
+    padding: .5rem;
+    transition: all .3s; 
+}
+
+.input-username,
+.input-password {
+    width: 22rem;
+    border-radius: 4px;
+}
+
+.input-username:focus ,.input-password:focus
+{
+    width: 24rem;
+}
+
+
+.login-heading {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.input-username {
+
+}
+
+.input-password {
+
+}
+
+.btn-login {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: .2rem 4rem;
+    background-color: #16c79a;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-login:hover {
+    background-color: #63D9BB;
+}
